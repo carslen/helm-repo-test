@@ -42,7 +42,9 @@ func main() {
 	flag.StringVar(&gitOwner, "owner", "", "Specify GitHub User or Organization")
 	flag.StringVar(&centralHelmIndex, "indexFile", "", "Specify Helm Repository index file")
 	flag.Parse()
-
+	
+	fmt.Println(gitOwner, centralHelmIndex)
+	
 	ctx := context.Background()
 	client := getAuthenticatedClient(ctx)
 	repos, _, _ := getOrgRepos(ctx, gitOwner, client)
