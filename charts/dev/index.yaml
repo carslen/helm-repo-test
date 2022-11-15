@@ -1,4 +1,1261 @@
 apiVersion: v1
 entries:
-  {}
-generated: "2022-11-15T15:54:15.098157+01:00"
+  bpdm:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2022-09-21T09:36:54.719205241Z"
+    dependencies:
+    - alias: opensearch
+      condition: opensearch.enabled
+      name: opensearch
+      repository: https://opensearch-project.github.io/helm-charts/
+      version: 2.4.0
+    - alias: postgres
+      condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: A Helm chart for deploying the BPDM service
+    digest: b70937983e477e21f45513dd26966e11359cf965ea5460a18403ee0768d462d0
+    name: bpdm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-bpdm/releases/download/bpdm-2.0.0/bpdm-2.0.0.tgz
+    version: 2.0.0
+  bpdm-gate:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2022-09-21T09:36:54.875200961Z"
+    description: A Helm chart for deploying the BPDM gate service
+    digest: cce233b4b2599e9ae3f8954acdc92e01dfd397bef4d9fd1909cec0ba4ef679cb
+    name: bpdm-gate
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-bpdm/releases/download/bpdm-gate-2.0.0/bpdm-gate-2.0.0.tgz
+    version: 2.0.0
+  centralidp:
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2022-11-15T09:18:44.765162358Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Central Keycloak Instance
+    digest: 111b2618c33aa3a66582fea24ac94f015b13a1ce768596bc592b31206e5aa6fe
+    name: centralidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/centralidp-0.7.0/centralidp-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-10-17T15:21:22.077174666Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Central Keycloak Instance
+    digest: 8a874d3a0bc6f496d66efa56b3b3ae5455c2d9667fd346829672ae1d5740fb3b
+    name: centralidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/centralidp-0.6.0/centralidp-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    created: "2022-09-08T13:29:28.795911251Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Central Keycloak Instance
+    digest: 681bc2e0852c12ff6b13d3b96524eb0edcf92bef00a26e0f1dba05899294a91c
+    name: centralidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/centralidp-0.5.3/centralidp-0.5.3.tgz
+    version: 0.5.3
+  - apiVersion: v2
+    created: "2022-08-11T20:28:56.41289371Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Central Keycloak Instance
+    digest: d056087c6043880186653c8dcbff2a9ccb9fd76d252e65cfcc37334a2b3a182b
+    name: centralidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/centralidp-0.5.1/centralidp-0.5.1.tgz
+    version: 0.5.1
+  dft-backend:
+  - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2022-11-07T11:45:40.102480257Z"
+    dependencies:
+    - alias: postgres
+      condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart for DFT application
+    digest: 8fd8f5990bc89ec39175fe6f34c921669a8cd8f5a529ab8445d2ab7bee71acb4
+    name: dft-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dft-backend-1.7.0/dft-backend-1.7.0.tgz
+    version: 1.7.0
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2022-10-12T10:17:41.082836692Z"
+    dependencies:
+    - alias: postgres
+      condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart for DFT application
+    digest: c3bb9a5cad40a18a30235099432df5d0fd7b572413db662e40c4bb5fd743131f
+    name: dft-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dft-backend-1.6.0/dft-backend-1.6.0.tgz
+    version: 1.6.0
+  - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-10-11T08:21:20.960161794Z"
+    dependencies:
+    - alias: postgres
+      condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart for DFT application
+    digest: ea8951a362c29c74e211620fa1f246309e135d523db8c70af33ffb12c5057dc3
+    name: dft-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dft-backend-1.5.0/dft-backend-1.5.0.tgz
+    version: 1.5.0
+  dft-frontend:
+  - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2022-11-07T11:50:34.950991255Z"
+    description: A Helm chart for Kubernetes
+    digest: dc72fe6c0dcb5dfe818ab43571d10a73b5457ad913afc4fdc980ab1a78f9d551
+    name: dft-frontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dft-frontend-1.7.0/dft-frontend-1.7.0.tgz
+    version: 1.7.0
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2022-10-12T10:16:43.04194807Z"
+    description: A Helm chart for Kubernetes
+    digest: b30fd556dc71f9b7939be05e81baa0036ce3bc8608552cd08debf37d7e7e94c4
+    name: dft-frontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dft-frontend-1.6.0/dft-frontend-1.6.0.tgz
+    version: 1.6.0
+  - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-10-11T08:08:05.48530013Z"
+    description: A Helm chart for Kubernetes
+    digest: 17f64e9ccbd2f78b52254ff4f45701c997dd296c51ea9d9535329cfa4f998ec5
+    name: dft-frontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dft-frontend-1.5.0/dft-frontend-1.5.0.tgz
+    version: 1.5.0
+  dftbackend:
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2022-09-12T04:25:46.00405242Z"
+    dependencies:
+    - alias: postgres
+      condition: postgresql.enabled
+      name: postgresql
+      repository: file://charts/postgresql
+      version: 1.0.0
+    description: A Helm chart for DFT application
+    digest: 4120250e4374b811b93f681f5b6149d32c7038d3b66ac4109e6aceefb9a984de
+    name: dftbackend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dftbackend-1.3.0/dftbackend-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2022-08-29T06:39:23.253521586Z"
+    dependencies:
+    - alias: postgres
+      condition: postgresql.enabled
+      name: postgresql
+      repository: file://charts/postgresql
+      version: 1.0.0
+    description: A Helm chart for DFT application
+    digest: 7bcd04344c4533c10652860db15e495a4f35d60919b6ff4f3d1ae75549979318
+    name: dftbackend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dftbackend-1.2.0/dftbackend-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 1.1.1
+    created: "2022-08-25T04:37:15.492075456Z"
+    dependencies:
+    - alias: postgres
+      condition: postgresql.enabled
+      name: postgresql
+      repository: file://charts/postgresql
+      version: 1.0.0
+    description: A Helm chart for DFT application
+    digest: 93366416f5e932d3211a9208ed970b75650438ad80e7390d268959a52b7c7e4f
+    name: dftbackend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dftbackend-1.1.1/dftbackend-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-08-24T15:22:27.140613986Z"
+    dependencies:
+    - alias: postgres
+      condition: postgresql.enabled
+      name: postgresql
+      repository: file://charts/postgresql
+      version: 1.0.0
+    description: A Helm chart for DFT application
+    digest: b98d57790974456001d9c67d991653ed6ccc6fddc88eb217d82f7090f8cea25e
+    name: dftbackend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/dftbackend-1.1.0/dftbackend-1.1.0.tgz
+    version: 1.1.0
+  dftfrontend:
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2022-09-30T07:53:46.331555357Z"
+    description: A Helm chart for Kubernetes
+    digest: 21a0b47b87af28118a37450a0e3c6ea476178e5bac8a6afae27c06e694761fff
+    name: dftfrontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dftfrontend-1.4.0/dftfrontend-1.4.0.tgz
+    version: 1.4.0
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2022-09-12T04:36:20.764708621Z"
+    description: A Helm chart for Kubernetes
+    digest: ecf3fcda87a6e632aece59a27ec71518949f71775c78d2cab2620f16a387f418
+    name: dftfrontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dftfrontend-1.3.0/dftfrontend-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2022-08-29T06:50:16.678258011Z"
+    description: A Helm chart for Kubernetes
+    digest: e0bba6c598fc394d2d66065d1db498ceac988ad6a72ce40c32b82185d75b7b6b
+    name: dftfrontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dftfrontend-1.2.0/dftfrontend-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 1.1.1
+    created: "2022-08-25T04:41:26.514824756Z"
+    description: A Helm chart for Kubernetes
+    digest: 88981658a926c167095354a08819b4aa092257a5f9e43d751cc0683af581eb0d
+    name: dftfrontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dftfrontend-1.1.1/dftfrontend-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-08-24T15:33:15.371195181Z"
+    description: A Helm chart for Kubernetes
+    digest: 4f820e2710833174456917ee97730a85418e5ab02ff067921a186cf63f747df1
+    name: dftfrontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-frontend/releases/download/dftfrontend-1.1.0/dftfrontend-1.1.0.tgz
+    version: 1.1.0
+  edc-controlplane:
+  - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2022-09-30T13:29:48.854939034Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: 49f99c840214487f67ec3bda2599ca055979743800aa6055cc300142015a4be1
+    home: https://github.com/catenax-ng/product-edc/charts/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2022-09-30T13:29:48.852318491Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: 714242103cf33324de2c36a10ee7ad786b54be061fcb48bf89e7bccdebc46e82
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-30T13:29:48.850797966Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: a62f64162dea9753ae613eea0ff6f856a0db67e6c0ac8c158d172799c1893489
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2022-09-30T13:29:48.849305342Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: 1a0b3b6df43db1a60f5cafcded2a203aa971922f54ee22191de8c895f17990eb
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2022-09-30T13:29:48.847909919Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: c90789a3849b0773462f819a4de94ce027301ec588e352900f4b428307ab2dc4
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 0.0.4
+    created: "2022-09-30T13:29:48.846457095Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: bc43dc6a2276d1c99cabc681b4e9fd885a4cb4519e7ecb7dd6154e0927012572
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2022-09-30T13:29:48.845096973Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: eb0162201c5228d5220a1b26f2eef55368dfa095fc4d0eeeba8589fa8ad2c5b9
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2022-09-30T13:29:48.844053556Z"
+    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
+      layer with responsibility of resource management and govern contracts and data
+      transfers
+    digest: 81933df64b1521c0fea274e6689d7766b85c722d86bc3322800e1b96549c830c
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-09-30T13:29:48.842927938Z"
+    description: EDC Control-Plane
+    digest: 84a8bb290fb255569d34625cfdf18416b6019841a9906ce9f709fa645da09f98
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
+    name: edc-controlplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-controlplane-0.0.1.tgz
+    version: 0.0.1
+  edc-dataplane:
+  - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2022-09-30T13:29:48.864131984Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: 2ce361554bff24de5c599d939b9805838b4da95a749db944dec6c9c4a7c0944a
+    home: https://github.com/catenax-ng/product-edc/charts/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2022-09-30T13:29:48.863080767Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: b8f4b16d2c3a57d4f8889cf297445ac9bafdae4660b0f0e396e29b7e55e8ed32
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-30T13:29:48.86203185Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: e960f1e836f9d71728805256a642dcb7e61d3365de1861097ddd7f8c2f1d4baf
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2022-09-30T13:29:48.860988333Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: 295b89369c7358a0fb796afffb5ce1c14e7a7b64177f5c783d47b532c59fb2db
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2022-09-30T13:29:48.859950016Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: b3fa7dcc84f14d55e510b48f2a784c5872f4e1fa4aca574ef845382dda70b37f
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 0.0.4
+    created: "2022-09-30T13:29:48.858802697Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: 8bf547cde303a242a9b732f6114a85e9d01b07480dfa7e682c0e0827d984fe29
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2022-09-30T13:29:48.857832381Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: 6eb3eeba1989083f1ed4376bfc72b0c2ade3e45bd1feeb1759be1e079312af3f
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2022-09-30T13:29:48.856847465Z"
+    description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
+      of transferring and receiving data streams
+    digest: 5e082daf13b8058fb17ccd93c64c5b2f7d3c2e5151df6e77b57b24b8c5f8fae3
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-09-30T13:29:48.85591915Z"
+    description: EDC Data-Plane
+    digest: 896ebe268b417b4ddef663c30e296f228aca0528d4a1ebf4d8eba9ed02b63222
+    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
+    name: edc-dataplane
+    type: application
+    urls:
+    - https://catenax-ng.github.io/product-edc/helm-charts/edc-dataplane-0.0.1.tgz
+    version: 0.0.1
+  helm:
+  - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-10-03T06:28:50.4117771Z"
+    dependencies:
+    - alias: postgres
+      condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart for DFT application
+    digest: da1f4b3f7c91e2d5904c5038690cdd12735d6026da178c075385da046955d069
+    name: helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/helm-1.5.0/helm-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-24T14:46:51.307391371Z"
+    dependencies:
+    - alias: postgres
+      condition: postgresql.enabled
+      name: postgresql
+      repository: file://charts/postgresql
+      version: 1.0.0
+    description: A Helm chart for DFT application
+    digest: 46d999d337b9667f3c1f17640935fa95c53b80dd71436c75c937501e87044897
+    name: helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-dft-backend/releases/download/helm-1.0.0/helm-1.0.0.tgz
+    version: 1.0.0
+  irs:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-10-04T13:59:27.878482141Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: IRS Helm chart for Kubernetes for Catena-X
+    digest: 7d204cb39c3d101ddf6490821918dbaf7f54cdba200810c7f6da60ccf774d01b
+    name: irs
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-1.1.1/irs-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2022-09-06T14:12:08.366161743Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: A Helm chart for Kubernetes for Catena-X
+    digest: 1b4176c45ae8a95be21b0f9b45265b2b10e9fa5b172de8b6d0bd6c3b6ba58d12
+    name: irs
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-1.0.0/irs-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2022-09-02T13:07:09.957712562Z"
+    description: A Helm chart for Kubernetes for Catena-X
+    digest: 8ee3160c18c6b077a4a874595c4ac82d411f455e87a7a75ea4ff1c771fdc2b46
+    name: irs
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-0.1.0/irs-0.1.0.tgz
+    version: 0.1.0
+  irs-helm:
+  - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-11-11T15:17:34.429075207Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: IRS Helm chart for Kubernetes for Catena-X
+    digest: 678d532d28c4c5417c843be701528727b43a04694efc978a040010d630220fc6
+    name: irs-helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-helm-2.3.0/irs-helm-2.3.0.tgz
+    version: 2.3.0
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2022-10-28T14:10:14.159056559Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: IRS Helm chart for Kubernetes for Catena-X
+    digest: 2b06f059f79ca728be6e2b6d03d0c826dd5f836222ad8350a4a3b49ba527f5d7
+    name: irs-helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-helm-2.2.0/irs-helm-2.2.0.tgz
+    version: 2.2.0
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2022-10-18T10:41:48.029194726Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: IRS Helm chart for Kubernetes for Catena-X
+    digest: b6aa3f27bd8ee317f1221806567bd3b3a8445c88c3d52794025cfa3f1467841e
+    name: irs-helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-helm-2.1.0/irs-helm-2.1.0.tgz
+    version: 2.1.0
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2022-10-11T11:36:47.486356246Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: IRS Helm chart for Kubernetes for Catena-X
+    digest: 60afd685aa9ea3dd77f3e1b66561deb058a6332d296689fbdf9a588df0fefc4e
+    name: irs-helm
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-item-relationship-service/releases/download/irs-helm-2.0.0/irs-helm-2.0.0.tgz
+    version: 2.0.0
+  k8s-helm-example:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-31T14:45:57.491086902Z"
+    description: A Helm chart for Kubernetes for Catena-X
+    digest: 20ca62fc5a073e41ba9d06b7b09a50cdcd4935b6034fc36adbf2d3d9164a1fea
+    name: k8s-helm-example
+    type: application
+    urls:
+    - https://github.com/catenax-ng/k8s-helm-example/releases/download/k8s-helm-example-0.1.2/k8s-helm-example-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-06-10T09:20:03.730866089Z"
+    description: A Helm chart for Kubernetes for Catena-X
+    digest: 461d585842b28b0ad43483f8e6e621b92c3610c9344277f9bd6a062780e4a3db
+    name: k8s-helm-example
+    type: application
+    urls:
+    - https://github.com/catenax-ng/k8s-helm-example/releases/download/k8s-helm-example-0.1.1/k8s-helm-example-0.1.1.tgz
+    version: 0.1.1
+  managed-identity-wallets:
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-11-11T13:36:50.938408998Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 2fe168a7be4d4ad425e105594bc8bad80095efcddc87a6ef9be4cbebaf0fddaa
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.18/managed-identity-wallets-0.5.18.tgz
+    version: 0.5.18
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-11-11T13:10:47.464156879Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 2602d8fbdcb6f823148e737be35959546c6ac19dbc4cde93d92346bfbb405ec6
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.17/managed-identity-wallets-0.5.17.tgz
+    version: 0.5.17
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-11-11T13:05:50.251424618Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 39debf57b2b8a41f1e4f46c8345c847b9d7663f65555dc27a4fd4d8e0b01c477
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.16/managed-identity-wallets-0.5.16.tgz
+    version: 0.5.16
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-10-28T11:19:47.394389339Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: ce58ed178b49d1b166028cce04973dcf736f6bbd343ba0ff14d2fb2b230716ad
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.15/managed-identity-wallets-0.5.15.tgz
+    version: 0.5.15
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-10-27T10:11:22.97445484Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 76311967fa7730e1e94c196f64fea07a5085f9eb0ca045797dafd58f4e64b525
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.14/managed-identity-wallets-0.5.14.tgz
+    version: 0.5.14
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-10-24T15:51:04.358825918Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 9e0c8502512c34b9a6b7748383da47207c7e0e8c103b996805844d2296661702
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.13/managed-identity-wallets-0.5.13.tgz
+    version: 0.5.13
+  - apiVersion: v2
+    appVersion: 2.1.1
+    created: "2022-10-07T20:51:29.479619579Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 647434c97c2f5bb01ca952a4a5e8d30a60da74561c925d6397f68af76de025c7
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.11/managed-identity-wallets-0.5.11.tgz
+    version: 0.5.11
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2022-10-05T22:32:40.376982423Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: e2d3eaaf0db6b53cec01396e7fcccf0ab5911ae97319e4397df15844eb81f429
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.10/managed-identity-wallets-0.5.10.tgz
+    version: 0.5.10
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2022-10-05T16:47:29.771420439Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 02881f6eeb3c7d10fba7d4555f033d6aef27ae1438d9da5c93a8500bc5c6ddcf
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.9/managed-identity-wallets-0.5.9.tgz
+    version: 0.5.9
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2022-10-04T07:38:28.187040452Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 91962b44e365b118a544d90a820ae77aedec46e5f7c1f1a8da97ca6ed6579120
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.8/managed-identity-wallets-0.5.8.tgz
+    version: 0.5.8
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2022-10-01T04:29:24.317787691Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 4a30a493e3e02cc8dfdcdff09b8837e2d7d40e1310816009136389bca5577d29
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.7/managed-identity-wallets-0.5.7.tgz
+    version: 0.5.7
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2022-09-30T19:51:31.964334453Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 2804bd4ea2296345c83df0ce7476b90f78577902113e1adfd9a29b80febf3c37
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.6/managed-identity-wallets-0.5.6.tgz
+    version: 0.5.6
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2022-09-30T10:34:05.545455166Z"
+    dependencies:
+    - alias: acapypostgresql
+      condition: acapypostgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - alias: postgresql
+      condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Managed Identity Wallets Service
+    digest: 43dc4c590964200c8c50cabeee5f89d8bb7e0e15e03c359405b184183cd5b070
+    name: managed-identity-wallets
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-core-managed-identity-wallets-cd/releases/download/managed-identity-wallets-0.5.2/managed-identity-wallets-0.5.2.tgz
+    version: 0.5.2
+  omejdn-server:
+  - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2022-09-29T05:59:26.767604961Z"
+    description: DAPS server helm-chart
+    digest: 5a69d496f31c2ed380f36c7a949377e61f6ac9eff8c48bae3f020671744a581b
+    name: omejdn-server
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-DAPS/releases/download/omejdn-server-1.7.1/omejdn-server-1.7.1.tgz
+    version: 1.7.1
+  - apiVersion: v2
+    appVersion: 1.4.2
+    created: "2022-09-08T09:15:12.583970784Z"
+    description: DAPS server helm-chart
+    digest: c07ac9cf5bb291eedd7ea376137f0194b0cb6e6245b4b58f0b62081c2b0f26ac
+    name: omejdn-server
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-DAPS/releases/download/omejdn-server-1.4.2/omejdn-server-1.4.2.tgz
+    version: 1.4.2
+  - apiVersion: v2
+    appVersion: 1.4.2
+    created: "2022-09-08T09:12:03.785864289Z"
+    description: DAPS server helm-chart
+    digest: c053fa43872f3cee319d99754092bf1da4182e4ed4186e77a43c121bfeb08187
+    name: omejdn-server
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-DAPS/releases/download/omejdn-server-0.1.0/omejdn-server-0.1.0.tgz
+    version: 0.1.0
+  portal:
+  - apiVersion: v2
+    appVersion: 0.8.0
+    created: "2022-11-15T13:30:10.379792286Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: 8f1fe10ded3155f641385d2ad0a75a7d19353f009aec1bed79d5b66473e4c2fc
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.8.0/portal-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-10-20T14:32:49.916495997Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: ebc59f186953d8c5acf17580c29ac2821dcb8732b3c49a78ea6bf60549f651cf
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.6.0/portal-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 0.5.5
+    created: "2022-10-05T16:58:31.786064179Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: 81422c997085b0c2529ec40be5a4409f6371c84fae618487b502088a99f4d630
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.5.5/portal-0.5.5.tgz
+    version: 0.5.5
+  - apiVersion: v2
+    appVersion: 0.5.4
+    created: "2022-09-21T18:23:58.006716411Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: e874fcae5d7adfd4dd2c6a0aa4244663696003f46af5939cbc51ca56e8a73626
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.5.4/portal-0.5.4.tgz
+    version: 0.5.4
+  - apiVersion: v2
+    appVersion: 0.5.3
+    created: "2022-09-05T15:42:16.011301549Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: d6b57ba627271eb3af236077d4d163b334f9b9840fbe3158f582d443c46678b8
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.5.3/portal-0.5.3.tgz
+    version: 0.5.3
+  - apiVersion: v2
+    appVersion: 0.5.2
+    created: "2022-09-01T11:34:19.624865013Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: 2b10eeddf27791a54dc4dbb922068010e7f05d807cd7a78c2d276d66e85e8abd
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.5.2/portal-0.5.2.tgz
+    version: 0.5.2
+  - apiVersion: v2
+    appVersion: 0.5.1
+    created: "2022-08-11T16:27:48.330572586Z"
+    description: Helm chart for Catena-X Portal frontend
+    digest: f9ac87322541349b9f79d4694a621efd4d8e895b9e270ee0052e7df05f29e3e9
+    name: portal
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-0.5.1/portal-0.5.1.tgz
+    version: 0.5.1
+  portal-backend:
+  - apiVersion: v2
+    appVersion: 0.8.0
+    created: "2022-11-15T13:30:10.630277726Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.11.x
+    description: Helm chart for Catena-X Portal backend
+    digest: d182247b6a0ac1619f1180f68304adeab1aa7b6ed6b4782b48686c5eaba2210c
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.8.0/portal-backend-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-10-20T14:32:50.134077554Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.11.x
+    description: Helm chart for Catena-X Portal backend
+    digest: 8f5b5a4e76b36fac9c2a5e729f3753c12e24328df36530f668c1279475153a29
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.6.0/portal-backend-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 0.5.5
+    created: "2022-10-05T16:58:32.095256151Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.11.x
+    description: Helm chart for Catena-X Portal backend
+    digest: af69efeaaecc3b176f09bab822d85194ea3bd565e7dc93c261f575b81575705e
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.5.5/portal-backend-0.5.5.tgz
+    version: 0.5.5
+  - apiVersion: v2
+    appVersion: 0.5.4
+    created: "2022-09-21T18:23:58.239887382Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.11.x
+    description: Helm chart for Catena-X Portal backend
+    digest: b63aa2e32c1377e488c8f9d5d3fc5873452c58a400a2a0947cf8c0f4ae8a25b2
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.5.4/portal-backend-0.5.4.tgz
+    version: 0.5.4
+  - apiVersion: v2
+    appVersion: 0.5.3
+    created: "2022-09-05T15:42:16.173822358Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.11.x
+    description: Helm chart for Catena-X Portal backend
+    digest: 38d8bb3b809630d437066f9c40dbc0461e74787c5dfa09da8da97d00242c767a
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.5.3/portal-backend-0.5.3.tgz
+    version: 0.5.3
+  - apiVersion: v2
+    appVersion: 0.5.2
+    created: "2022-09-01T11:34:19.984907127Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.x.x
+    description: Helm chart for Catena-X Portal backend
+    digest: 6f699862b2abcb1547118fc33258df1884ab344a66deba968d5c2ed0eaa59706
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.5.2/portal-backend-0.5.2.tgz
+    version: 0.5.2
+  - apiVersion: v2
+    appVersion: 0.5.1
+    created: "2022-08-11T16:27:48.514607737Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.x.x
+    description: Helm chart for Catena-X Portal backend
+    digest: 174701ec92a4b84ea2644fdd97c1a8fa922cc406ddec7f7a82429f8decd6c284
+    name: portal-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-cd/releases/download/portal-backend-0.5.1/portal-backend-0.5.1.tgz
+    version: 0.5.1
+  product-traceability-foss-backend:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-29T13:12:39.392906814Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: pgadmin4.enabled
+      name: pgadmin4
+      repository: https://helm.runix.net
+      version: 1.x.x
+    - condition: irs.enabled
+      name: irs
+      repository: https://catenax-ng.github.io/product-item-relationship-service
+      version: 1.0.0
+    description: A Helm chart for Traceability backend application
+    digest: ed0669f328b55314930759f126a2605cd0424adee1d341e72d32982d0c80004c
+    name: product-traceability-foss-backend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-traceability-foss-backend/releases/download/helm-charts-0.1.0/product-traceability-foss-backend-0.1.0.tgz
+    version: 0.1.0
+  product-traceability-foss-frontend:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-05T07:50:15.746793097Z"
+    description: A Helm chart for Traceability frontend application
+    digest: e820260b37c29e4276dcb8dba7aa4ec7d68abffbbe21be7cbad601e8de006d51
+    name: product-traceability-foss-frontend
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-traceability-foss-frontend/releases/download/product-traceability-foss-frontend-0.1.0/product-traceability-foss-frontend-0.1.0.tgz
+    version: 0.1.0
+  sharedidp:
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2022-11-15T09:18:44.999616947Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Shared Keycloak Instance
+    digest: 612e54fc79056143afa40cf6215042e39b29ef11c2608965bd7e4c6662f02e92
+    name: sharedidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/sharedidp-0.7.0/sharedidp-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-10-17T15:21:22.24436116Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Shared Keycloak Instance
+    digest: 8275430350b6f818cfb68a4b0e1866189f1074623020b6ca94dab1ce5774cf10
+    name: sharedidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/sharedidp-0.6.0/sharedidp-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    created: "2022-09-08T13:29:28.985647316Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Shared Keycloak Instance
+    digest: d24ccaf42e5188d9236a937045d0fc199bcd927c103cdc1b69edda70d37666d5
+    name: sharedidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/sharedidp-0.5.3/sharedidp-0.5.3.tgz
+    version: 0.5.3
+  - apiVersion: v2
+    created: "2022-08-11T20:28:56.681757776Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.18
+    description: Helm chart for Catena-X Shared Keycloak Instance
+    digest: 584f7b16852a8d8b5b8795bb296428ce35c0d9b5c284d6c76977bdfea33d2d71
+    name: sharedidp
+    type: application
+    urls:
+    - https://github.com/catenax-ng/product-portal-iam/releases/download/sharedidp-0.5.1/sharedidp-0.5.1.tgz
+    version: 0.5.1
+generated: "2022-11-15T15:38:38.708063872Z"
