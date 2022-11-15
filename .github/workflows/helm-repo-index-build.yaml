@@ -36,6 +36,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git status
           git add charts/dev/index.yaml
           git commit -m "chore: update dev helm repo index"
           git push
