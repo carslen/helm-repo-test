@@ -19,14 +19,12 @@
 name: Build DEV Helm Repository
 
 on:
-  schedule:
-    - cron: "30 3 * * *"
+#  schedule:
+#    - cron: "30 3 * * *"
+  workflow_call:
   workflow_dispatch:
 
 jobs:
-  call-workflow:
-    uses: carslen/helm-repo-test/.github/workflows/build-helmRepoIndex.yaml@106ecd234d47611fcf060f1058910b12afad69a6
-
   repoIndex:
     runs-on: ubuntu-latest
     steps:
