@@ -24,6 +24,9 @@ on:
   workflow_dispatch:
 
 jobs:
+  call-workflow:
+    uses: carslen/projects/private/repos/helm-repo-test/.github/workflows/build-helmRepoIndex.yaml
+
   repoIndex:
     runs-on: ubuntu-latest
     steps:
