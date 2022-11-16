@@ -16,7 +16,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-name: Build DEV Helm Repository
+name: Build Helm Repository - DEV
 
 on:
 #  schedule:
@@ -25,10 +25,34 @@ on:
   workflow_dispatch:
 
 jobs:
-  repoIndex:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: 'src/helmRepoIndex/go.mod'
+
+      - name: Run
+        run: cd src/helmRepoIndex && go build -ldflags "-s -w"
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: go-binary
+          path: src/helmRepoIndex/helmRepoIndex
+
+  repoIndex:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: go-binary
 
       - name: Run
         run: ./src/helmRepoIndex/helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
