@@ -25,7 +25,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: carslen/projects/private/repos/helm-repo-test/.github/workflows/build-helmRepoIndex.yaml
+    uses: carslen/projects/private/repos/helm-repo-test/.github/workflows/build-helmRepoIndex.yaml@106ecd234d47611fcf060f1058910b12afad69a6
 
   repoIndex:
     runs-on: ubuntu-latest
