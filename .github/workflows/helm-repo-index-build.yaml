@@ -66,4 +66,3 @@ jobs:
           git add charts/dev/index.yaml
           git commit -m "chore: update dev helm repo index"
           git push
-src/helmRepoIndex/helmRepoIndex
