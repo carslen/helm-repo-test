@@ -53,6 +53,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: go-binary
+          working-directory: src/helmRepoIndex
 
       - name: Run
         run: ./src/helmRepoIndex/helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
