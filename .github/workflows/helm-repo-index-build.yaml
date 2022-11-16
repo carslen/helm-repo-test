@@ -56,7 +56,8 @@ jobs:
           path: src/helmRepoIndex
 
       - name: Run
-        run: ls -l src/helmRepoIndex && ./src/helmRepoIndex/helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
+        run: chmod +x helmRepoIndex && ./helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
+        working-directory: src/helmRepoIndex
 
       - name: Publish changes
         run: |
