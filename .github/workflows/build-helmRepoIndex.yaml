@@ -41,7 +41,7 @@ jobs:
         run: "[ ! -d .github/bin ] && mkdir .github/bin"
 
       - name: Run
-        run: go build -ldflags "-s -w" -o ../../.github/bin/.github/bin/
+        run: go build -ldflags "-s -w" -o ../../.github/bin/
         working-directory: src/helmRepoIndex
 
       - name: debug
@@ -53,5 +53,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .github/bin/.github/bin/helmRepoIndex
-          git commit -m "chore: update dev helm repo index $GITHUB_REF"
+          git commit -m "chore: update dev helm repo index ($GITHUB_REF)"
           git push
