@@ -19,12 +19,11 @@
 name: Build Go - helmRepoIndex
 
 on:
-#  push:
-#    branches:
-#      - 'main'
-#    paths:
-#      - '**.go'
-  workflow_call:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'src/helmRepoIndex/**.go'
   workflow_dispatch:
 
 jobs:
@@ -39,12 +38,13 @@ jobs:
           go-version-file: 'src/helmRepoIndex/go.mod'
 
       - name: Run
-        run: cd src/helmRepoIndex && go build -ldflags "-s -w"
+        run: go build -ldflags "-s -w"
+        working-directory: src/helmRepoIndex
 
-#      - name: Publish changes
-#        run: |
-#          git config user.name github-actions
-#          git config user.email github-actions@github.com
-#          git add src/helmRepoIndex/helmRepoIndex
-#          git commit -m "build: build helmRepoIndex"
-#          git push
+      - name: Publish changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add src/helmRepoIndex/helmRepoIndex
+          git commit -m "build: build helmRepoIndex"
+          git push
