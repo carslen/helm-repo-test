@@ -24,27 +24,27 @@ on:
   workflow_call:
   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version-file: 'src/helmRepoIndex/go.mod'
-
-      - name: Run
-        run: cd src/helmRepoIndex && go build -ldflags "-s -w"
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: go-binary
-          path: src/helmRepoIndex/helmRepoIndex
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#
+#      - name: Set up Go
+#        uses: actions/setup-go@v3
+#        with:
+#          go-version-file: 'src/helmRepoIndex/go.mod'
+#
+#      - name: Run
+#        run: cd src/helmRepoIndex && go build -ldflags "-s -w"
+#
+#      - uses: actions/upload-artifact@v3
+#        with:
+#          name: helmRepoIndex
+#          path: src/helmRepoIndex/helmRepoIndex
 
   repoIndex:
-    needs: build
+#    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -52,7 +52,7 @@ jobs:
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
-          name: go-binary
+          name: helmRepoIndex
           path: src/helmRepoIndex
 
       - name: Run
