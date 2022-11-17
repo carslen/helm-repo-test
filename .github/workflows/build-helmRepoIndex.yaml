@@ -48,9 +48,3 @@ jobs:
           git add src/helmRepoIndex/helmRepoIndex
           git commit -m "build: build helmRepoIndex"
           git push
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: helmRepoIndex
-          path: src/helmRepoIndex/helmRepoIndex
