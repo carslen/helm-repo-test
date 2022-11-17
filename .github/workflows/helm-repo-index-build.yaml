@@ -25,38 +25,13 @@ on:
   workflow_dispatch:
 
 jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v3
-#
-#      - name: Set up Go
-#        uses: actions/setup-go@v3
-#        with:
-#          go-version-file: 'src/helmRepoIndex/go.mod'
-#
-#      - name: Run
-#        run: cd src/helmRepoIndex && go build -ldflags "-s -w"
-#
-#      - uses: actions/upload-artifact@v3
-#        with:
-#          name: helmRepoIndex
-#          path: src/helmRepoIndex/helmRepoIndex
-
   repoIndex:
-#    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Download a single artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: helmRepoIndex
-          path: src/helmRepoIndex
-
       - name: Run
-        run: chmod +x src/helmRepoIndex/helmRepoIndex && ./src/helmRepoIndex/helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
+        run:  .github/bin/helmRepoIndex -owner "catenax-ng" -token ${{ secrets.GITHUB_TOKEN }} -indexFile "charts/dev/index.yaml"
 
       - name: Publish changes
         run: |
@@ -64,5 +39,5 @@ jobs:
           git config user.email github-actions@github.com
           git status
           git add charts/dev/index.yaml
-          git commit -m "chore: update dev helm repo index"
+          git commit -m "chore: update dev helm repo index ($GITHUB_REF)"
           git push
