@@ -41,6 +41,9 @@ jobs:
         run: go build -ldflags "-s -w" -o ./.github/bin/
         working-directory: src/helmRepoIndex
 
+      - name: debug
+        run: ls -lR ./github
+
       - name: Publish changes
         run: |
           git config user.name github-actions
