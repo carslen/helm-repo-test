@@ -38,7 +38,7 @@ jobs:
           go-version-file: 'src/helmRepoIndex/go.mod'
 
       - name: Run
-        run: go build -ldflags "-s -w" -o ./.github/bin/
+        run: go build -ldflags "-s -w" -o .github/bin/
         working-directory: src/helmRepoIndex
 
       - name: debug
