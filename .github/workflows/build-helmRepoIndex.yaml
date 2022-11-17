@@ -42,7 +42,7 @@ jobs:
         working-directory: src/helmRepoIndex
 
       - name: debug
-        run: ls -lR ./github
+        run: ls -laR .github
 
       - name: Publish changes
         run: |
